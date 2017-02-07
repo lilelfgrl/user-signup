@@ -137,7 +137,7 @@ class MainHandler(webapp2.RequestHandler):
                 have_error = True
 
             if have_error == True:
-                self.write_form(username,password,verify_password,email,username_error,password_error,verify_error,email_error)
+                self.write_form(username, "" , "" ,email,username_error,password_error,verify_error,email_error)
             else:
                 self.redirect("/welcome?username=" + username)
 
